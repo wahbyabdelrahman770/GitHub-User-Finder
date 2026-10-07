@@ -14,3 +14,37 @@ body {
         outline: solid 5px white;
     }
 }
+
+@media (width<992px) {
+    .input-buttons {
+        width: 90% !important;
+
+        input {
+            width: 80% !important;
+        }
+
+        .showBtn {
+            width: 80% !important;
+        }
+
+        .clearBtn {
+            width: 80% !important;
+        }
+    }
+
+    .result {
+        width: 90% !important;
+    }
+}
+
+@media (width<600px) {
+    body {
+        >div {
+            margin-top: 4em;
+        }
+    }
+
+    .profile-pic {
+        width: 50% !important;
+    }
+}

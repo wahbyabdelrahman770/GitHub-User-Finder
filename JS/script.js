@@ -1,6 +1,6 @@
 const input = document.querySelector("input");
-const showBtn = document.querySelector(".btn-primary");
-const clearBtn = document.querySelector(".btn-danger");
+const showBtn = document.querySelector(".showBtn");
+const clearBtn = document.querySelector(".clearBtn");
 const loadingDiv = document.querySelector(".loading");
 const errorDiv = document.querySelector(".error");
 const resultDiv = document.querySelector(".result");
@@ -48,11 +48,11 @@ showBtn.addEventListener("click", () => {
             }
             else {
                 resultDiv.innerHTML = `
-                    <img src="${user.avatar_url}" class="rounded-circle w-20">
+                    <img src="${user.avatar_url}" class="profile-pic rounded-circle w-20">
                     <h2 class="text-light text-center">${user.name ? user.name : user.login}</h2>
                     <p class="fw-medium text-secondary text-center">@${user.login}</p>
                     <p class="text-info text-center">${user.bio ? user.bio : "This user doesn't have a bio."}</p>
-                    <div class="mt-2 d-flex flex-row justify-content-center column-gap-3">
+                    <div class="mt-2 d-flex flex-column flex-lg-row justify-content-center column-gap-3 row-gap-1">
                         <div class="bg-body rounded-3 p-3 text-center">
                             <h5>${user.public_repos}</h5>
                             <p>Repositories</p>
