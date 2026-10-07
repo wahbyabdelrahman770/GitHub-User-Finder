@@ -1,0 +1,16 @@
+body {
+    >div {
+        margin-top: 10em;
+    }
+}
+
+.black-circle {
+    width: 70px;
+    height: 70px;
+}
+
+.result {
+    >img {
+        outline: solid 5px white;
+    }
+}
